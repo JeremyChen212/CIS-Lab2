@@ -19,13 +19,28 @@ import SwiftUI
 struct ContentView: View {
     
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+        Grid(alignment: .bottomTrailing) {
+            GridRow {
+                Image(systemName: "house.fill")
+                Image(systemName: "house.fill")
+                Image(systemName: "house.fill")
+            }
+            GridRow {
+                Image(systemName: "house.fill")
+                Image(systemName: "house.fill")
+                Image(systemName: "house.fill")
+            }
+            GridRow {
+                Image(systemName: "house.fill")
+                Image(systemName: "house.fill")
+                Image(systemName: "house.fill")
+            }
+            GridRow {
+                Image(systemName: "house.fill")
+                Image(systemName: "house.fill")
+                Image(systemName: "house.fill")
+            }
         }
-        .padding()
     }
 }
 
