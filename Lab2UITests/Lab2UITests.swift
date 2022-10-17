@@ -1,3 +1,12 @@
+/*:
+ Lab 2
+ 
+ Group 9
+ 
+ Jeremy Chen, David Solis
+ 
+ 10/18/22
+*/
 //
 //  Lab2UITests.swift
 //  Lab2UITests
