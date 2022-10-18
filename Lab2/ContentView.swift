@@ -18,17 +18,24 @@ import SwiftUI
 
 struct ContentView: View {
     
-    private var columns = [GridItem(.adaptive(minimum: 150), spacing: 0)]
+    private var columns = [GridItem(.adaptive(minimum: 100), spacing: 0)]
     private var emojis = ["🌮", "🌯", "🫔", "🥗", "🥘", "🫕", "🍜", "🍝", "🍲", "🍣", "🍱", "🍙"]
     
     var body: some View {
         ScrollView {
+            Text("The F🍩🍩D Game")
+                .font(.largeTitle)
+                .fontWeight(.bold)
+            Text("Have fun!")
+                .font(.headline)
+                .padding([.bottom], 20)
             LazyVGrid(columns: columns) {
                 ForEach(emojis[0..<emojis.count], id: \.self) { emoji in
                     EmojiCard(emoji: emoji)
                 }
             }
         }
+        .padding(30)
     }
 }
 
@@ -43,7 +50,7 @@ struct EmojiCard: View {
                 .stroke(lineWidth: 3)
                 .foregroundColor(.teal)
         }
-        .padding(20)
+        .padding(10)
         .scaledToFill()
     }
 }
