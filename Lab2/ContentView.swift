@@ -30,6 +30,7 @@ struct ContentView: View {
                 .font(.headline)
                 .padding([.bottom], 20)
             LazyVGrid(columns: columns) {
+                // Generate a collection with columns no smaller than 100
                 ForEach(emojis[0..<emojis.count], id: \.self) { emoji in
                     EmojiCard(emoji: emoji)
                 }
