@@ -29,6 +29,7 @@ struct ContentView: View {
                         Text(emoji)
                             .font(.largeTitle)
                     }
+                    .padding(20)
                 }
             }
         }
