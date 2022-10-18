@@ -27,6 +27,7 @@ struct ContentView: View {
                 ForEach(emojis[0..<emojis.count], id: \.self) { emoji in
                     ZStack {
                         Text(emoji)
+                            .font(.largeTitle)
                     }
                 }
             }
