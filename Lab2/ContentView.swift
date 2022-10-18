@@ -18,27 +18,17 @@ import SwiftUI
 
 struct ContentView: View {
     
+    private var columns = [GridItem(.adaptive(minimum: 150), spacing: 0)]
+    private var emojis = ["🌮", "🌯", "🫔", "🥗", "🥘", "🫕", "🍜", "🍝", "🍲", "🍣", "🍱", "🍙"]
+    
     var body: some View {
-        Grid(alignment: .bottomTrailing) {
-            GridRow {
-                Image(systemName: "house.fill")
-                Image(systemName: "house.fill")
-                Image(systemName: "house.fill")
-            }
-            GridRow {
-                Image(systemName: "house.fill")
-                Image(systemName: "house.fill")
-                Image(systemName: "house.fill")
-            }
-            GridRow {
-                Image(systemName: "house.fill")
-                Image(systemName: "house.fill")
-                Image(systemName: "house.fill")
-            }
-            GridRow {
-                Image(systemName: "house.fill")
-                Image(systemName: "house.fill")
-                Image(systemName: "house.fill")
+        ScrollView {
+            LazyVGrid(columns: columns) {
+                ForEach(emojis[0..<emojis.count], id: \.self) { emoji in
+                    ZStack {
+                        Text(emoji)
+                    }
+                }
             }
         }
     }
