@@ -47,6 +47,7 @@ struct EmojiCard: View {
         ZStack {
             Text(emoji)
                 .font(.largeTitle)
+            // Create a rounded border around the emoji
             RoundedRectangle(cornerRadius: 10)
                 .stroke(lineWidth: 3)
                 .foregroundColor(.teal)
