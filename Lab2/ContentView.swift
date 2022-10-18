@@ -25,18 +25,26 @@ struct ContentView: View {
         ScrollView {
             LazyVGrid(columns: columns) {
                 ForEach(emojis[0..<emojis.count], id: \.self) { emoji in
-                    ZStack {
-                        Text(emoji)
-                            .font(.largeTitle)
-                        RoundedRectangle(cornerRadius: 10)
-                            .stroke(lineWidth: 3)
-                            .foregroundColor(.teal)
-                    }
-                    .padding(20)
-                    .scaledToFill()
+                    EmojiCard(emoji: emoji)
                 }
             }
         }
+    }
+}
+
+struct EmojiCard: View {
+    var emoji: String
+    
+    var body: some View {
+        ZStack {
+            Text(emoji)
+                .font(.largeTitle)
+            RoundedRectangle(cornerRadius: 10)
+                .stroke(lineWidth: 3)
+                .foregroundColor(.teal)
+        }
+        .padding(20)
+        .scaledToFill()
     }
 }
 
