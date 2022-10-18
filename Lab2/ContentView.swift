@@ -26,13 +26,14 @@ struct ContentView: View {
             LazyVGrid(columns: columns) {
                 ForEach(emojis[0..<emojis.count], id: \.self) { emoji in
                     ZStack {
-                        RoundedRectangle(cornerRadius: 10)
-                            .stroke(lineWidth: 3)
-                            .foregroundColor(.blue)
                         Text(emoji)
                             .font(.largeTitle)
+                        RoundedRectangle(cornerRadius: 10)
+                            .stroke(lineWidth: 3)
+                            .foregroundColor(.teal)
                     }
                     .padding(20)
+                    .scaledToFill()
                 }
             }
         }
