@@ -50,18 +50,6 @@ struct ContentView: View {
     }
 }
 
-struct Emoji: Codable, Identifiable {
-    let id: UUID
-    let content: String
-    
-    init(id: UUID = UUID(), _ content: String) {
-        self.id = id
-        self.content = content
-    }
-    
-    static let sampleData: [Emoji] = [Emoji("🌮"), Emoji("🌯"), Emoji("🫔"), Emoji("🥗"), Emoji("🥘"), Emoji("🫕"), Emoji("🍜"), Emoji("🍝"), Emoji("🍲"), Emoji("🍣"), Emoji("🍱"), Emoji("🍙")]
-}
-
 struct EmojiCard: View {
     var emoji: String
     
