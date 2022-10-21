@@ -51,8 +51,8 @@ struct ContentView: View {
 }
 
 struct Emoji: Codable, Identifiable {
-    var id: UUID
-    var content: String
+    let id: UUID
+    let content: String
     
     init(id: UUID = UUID(), content: String) {
         self.id = id
