@@ -51,8 +51,13 @@ struct ContentView: View {
 }
 
 struct Emoji: Codable, Identifiable {
-    var id: UUID = UUID()
+    var id: UUID
     var content: String
+    
+    init(id: UUID = UUID(), content: String) {
+        self.id = id
+        self.content = content
+    }
     
     static let sampleData: [Emoji] = [Emoji(content: "🌮"), Emoji(content: "🌯"), Emoji(content: "🫔"), Emoji(content: "🥗"), Emoji(content: "🥘"), Emoji(content: "🫕"), Emoji(content: "🍜"), Emoji(content: "🍝"), Emoji(content: "🍲"), Emoji(content: "🍣"), Emoji(content: "🍱"), Emoji(content: "🍙")]
 }
