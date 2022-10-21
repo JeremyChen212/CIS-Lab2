@@ -49,27 +49,6 @@ struct ContentView: View {
     }
 }
 
-struct EmojiCard: View {
-    var content: String
-    
-    init(_ content: String) {
-        self.content = content
-    }
-    
-    var body: some View {
-        ZStack {
-            Text(content)
-                .font(.largeTitle)
-            // Create a rounded border around the emoji
-            RoundedRectangle(cornerRadius: 10)
-                .stroke(lineWidth: 3)
-                .foregroundColor(.teal)
-        }
-        .padding(10)
-        .scaledToFill()
-    }
-}
-
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         NavigationView {

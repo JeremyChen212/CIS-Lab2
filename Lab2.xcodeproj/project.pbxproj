@@ -12,6 +12,7 @@
 		221AF92A28FDEA6200AA8F87 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 221AF92928FDEA6200AA8F87 /* Assets.xcassets */; };
 		221AF92E28FDEA6200AA8F87 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 221AF92D28FDEA6200AA8F87 /* Preview Assets.xcassets */; };
 		D7D0569929033E7400E21003 /* Emoji.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7D0569829033E7400E21003 /* Emoji.swift */; };
+		D7D0569B290346A100E21003 /* EmojiCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7D0569A290346A100E21003 /* EmojiCard.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,6 +42,7 @@
 		221AF93328FDEA6200AA8F87 /* Lab2Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Lab2Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		221AF93D28FDEA6200AA8F87 /* Lab2UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Lab2UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D7D0569829033E7400E21003 /* Emoji.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Emoji.swift; sourceTree = "<group>"; };
+		D7D0569A290346A100E21003 /* EmojiCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiCard.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +94,7 @@
 				221AF92528FDEA6100AA8F87 /* Lab2App.swift */,
 				221AF92728FDEA6100AA8F87 /* ContentView.swift */,
 				D7D0569829033E7400E21003 /* Emoji.swift */,
+				D7D0569A290346A100E21003 /* EmojiCard.swift */,
 				221AF92928FDEA6200AA8F87 /* Assets.xcassets */,
 				221AF92B28FDEA6200AA8F87 /* Lab2.entitlements */,
 				221AF92C28FDEA6200AA8F87 /* Preview Content */,
@@ -237,6 +240,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D7D0569B290346A100E21003 /* EmojiCard.swift in Sources */,
 				D7D0569929033E7400E21003 /* Emoji.swift in Sources */,
 				221AF92828FDEA6100AA8F87 /* ContentView.swift in Sources */,
 				221AF92628FDEA6100AA8F87 /* Lab2App.swift in Sources */,
