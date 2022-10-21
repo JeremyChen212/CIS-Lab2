@@ -30,8 +30,8 @@ struct ContentView: View {
                 .padding([.bottom], 20)
             LazyVGrid(columns: columns) {
                 // Generate a collection with columns no smaller than 100
-                ForEach(Emoji.sampleData) { emoji in
-                    EmojiCard(emoji: emoji.content)
+                ForEach(Emoji.sampleData) { card in
+                    EmojiCard(emoji: card.content)
                 }
             }
         }
