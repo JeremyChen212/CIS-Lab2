@@ -18,7 +18,7 @@ import SwiftUI
 
 struct ContentView: View {
     
-    private var columns = [GridItem(.adaptive(minimum: 100), spacing: 0)]
+    private var columns = [GridItem(.flexible(minimum: 150)), GridItem(.flexible(minimum: 150))]
     
     var body: some View {
         ScrollView {
