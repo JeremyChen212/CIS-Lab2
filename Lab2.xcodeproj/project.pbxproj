@@ -13,6 +13,7 @@
 		221AF92E28FDEA6200AA8F87 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 221AF92D28FDEA6200AA8F87 /* Preview Assets.xcassets */; };
 		D7D0569929033E7400E21003 /* Emoji.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7D0569829033E7400E21003 /* Emoji.swift */; };
 		D7D0569B290346A100E21003 /* EmojiCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7D0569A290346A100E21003 /* EmojiCard.swift */; };
+		D7D0569D290346B500E21003 /* ShuffleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7D0569C290346B500E21003 /* ShuffleButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +44,7 @@
 		221AF93D28FDEA6200AA8F87 /* Lab2UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Lab2UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D7D0569829033E7400E21003 /* Emoji.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Emoji.swift; sourceTree = "<group>"; };
 		D7D0569A290346A100E21003 /* EmojiCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiCard.swift; sourceTree = "<group>"; };
+		D7D0569C290346B500E21003 /* ShuffleButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShuffleButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +97,7 @@
 				221AF92728FDEA6100AA8F87 /* ContentView.swift */,
 				D7D0569829033E7400E21003 /* Emoji.swift */,
 				D7D0569A290346A100E21003 /* EmojiCard.swift */,
+				D7D0569C290346B500E21003 /* ShuffleButton.swift */,
 				221AF92928FDEA6200AA8F87 /* Assets.xcassets */,
 				221AF92B28FDEA6200AA8F87 /* Lab2.entitlements */,
 				221AF92C28FDEA6200AA8F87 /* Preview Content */,
@@ -243,6 +246,7 @@
 				D7D0569B290346A100E21003 /* EmojiCard.swift in Sources */,
 				D7D0569929033E7400E21003 /* Emoji.swift in Sources */,
 				221AF92828FDEA6100AA8F87 /* ContentView.swift in Sources */,
+				D7D0569D290346B500E21003 /* ShuffleButton.swift in Sources */,
 				221AF92628FDEA6100AA8F87 /* Lab2App.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
