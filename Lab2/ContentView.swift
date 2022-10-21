@@ -43,7 +43,6 @@ struct ContentView: View {
                     cards = cards.shuffled()
                 }) {
                     Image(systemName: "shuffle.circle.fill")
-                        .imageScale(.large)
                 }
             }
         }
