@@ -19,7 +19,6 @@ import SwiftUI
 struct ContentView: View {
     
     private var columns = [GridItem(.adaptive(minimum: 100), spacing: 0)]
-    private var emojis = ["🌮", "🌯", "🫔", "🥗", "🥘", "🫕", "🍜", "🍝", "🍲", "🍣", "🍱", "🍙"]
     
     var body: some View {
         ScrollView {
@@ -31,13 +30,20 @@ struct ContentView: View {
                 .padding([.bottom], 20)
             LazyVGrid(columns: columns) {
                 // Generate a collection with columns no smaller than 100
-                ForEach(emojis[0..<emojis.count], id: \.self) { emoji in
-                    EmojiCard(emoji: emoji)
+                ForEach(Emoji.sampleData) { emoji in
+                    EmojiCard(emoji: emoji.content)
                 }
             }
         }
         .padding(30)
     }
+}
+
+struct Emoji: Codable, Identifiable {
+    var id: UUID = UUID()
+    var content: String
+    
+    static let sampleData: [Emoji] = [Emoji(content: "🌮"), Emoji(content: "🌯"), Emoji(content: "🫔"), Emoji(content: "🥗"), Emoji(content: "🥘"), Emoji(content: "🫕"), Emoji(content: "🍜"), Emoji(content: "🍝"), Emoji(content: "🍲"), Emoji(content: "🍣"), Emoji(content: "🍱"), Emoji(content: "🍙")]
 }
 
 struct EmojiCard: View {
