@@ -39,11 +39,7 @@ struct ContentView: View {
         .padding(30)
         .toolbar {
             ToolbarItem {
-                Button(action: {
-                    cards = cards.shuffled()
-                }) {
-                    Image(systemName: "shuffle.circle.fill")
-                }
+                ShuffleButton(emojis: $emojis)
             }
         }
     }
