@@ -32,7 +32,7 @@ struct ContentView: View {
             LazyVGrid(columns: columns) {
                 // Generate a collection with columns no smaller than 100
                 ForEach(emojis) { emoji in
-                    EmojiCard(emoji: emoji.content)
+                    EmojiCard(emoji.content)
                 }
             }
         }
@@ -50,11 +50,15 @@ struct ContentView: View {
 }
 
 struct EmojiCard: View {
-    var emoji: String
+    var content: String
+    
+    init(_ content: String) {
+        self.content = content
+    }
     
     var body: some View {
         ZStack {
-            Text(emoji)
+            Text(content)
                 .font(.largeTitle)
             // Create a rounded border around the emoji
             RoundedRectangle(cornerRadius: 10)
