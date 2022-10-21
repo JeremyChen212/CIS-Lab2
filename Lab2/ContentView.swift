@@ -19,6 +19,7 @@ import SwiftUI
 struct ContentView: View {
     
     private var columns = [GridItem(.flexible(minimum: 150)), GridItem(.flexible(minimum: 150))]
+    @State var cards = Emoji.sampleData
     
     var body: some View {
         ScrollView {
@@ -30,12 +31,22 @@ struct ContentView: View {
                 .padding([.bottom], 20)
             LazyVGrid(columns: columns) {
                 // Generate a collection with columns no smaller than 100
-                ForEach(Emoji.sampleData) { card in
+                ForEach(cards) { card in
                     EmojiCard(emoji: card.content)
                 }
             }
         }
         .padding(30)
+        .toolbar {
+            ToolbarItem {
+                Button(action: {
+                    cards = cards.shuffled()
+                }) {
+                    Image(systemName: "shuffle.circle.fill")
+                        .imageScale(.large)
+                }
+            }
+        }
     }
 }
 
@@ -65,6 +76,8 @@ struct EmojiCard: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        NavigationView {
+            ContentView()
+        }
     }
 }
