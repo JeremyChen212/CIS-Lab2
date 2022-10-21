@@ -19,7 +19,7 @@ import SwiftUI
 struct ContentView: View {
     
     private var columns = [GridItem(.flexible(minimum: 150)), GridItem(.flexible(minimum: 150))]
-    @State var cards = Emoji.sampleData
+    @State var emojis = Emoji.sampleData
     
     var body: some View {
         ScrollView {
@@ -31,8 +31,8 @@ struct ContentView: View {
                 .padding([.bottom], 20)
             LazyVGrid(columns: columns) {
                 // Generate a collection with columns no smaller than 100
-                ForEach(cards) { card in
-                    EmojiCard(emoji: card.content)
+                ForEach(emojis) { emoji in
+                    EmojiCard(emoji: emoji.content)
                 }
             }
         }
